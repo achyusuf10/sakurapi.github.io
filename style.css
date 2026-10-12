@@ -1,0 +1,33 @@
+:root{--primary:#2FAA78;--primary-pressed:#218F64;--secondary:#7AD0AA;--accent:#F3A727;--bg:#F8FAFC;--surface:#fff;--ink:#171717;--fg:#262626;--muted:#525252;--border:#E5E7EB;--tint:#F0FBF6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--primary-pressed)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(248,250,252,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:32px;height:32px}
+.nav-links{display:flex;gap:20px;font-size:14px}
+.nav-links a{color:var(--muted);text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:14px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:#000}
+.btn svg{width:22px;height:22px}
+.btn small{display:block;font-size:11px;font-weight:500;opacity:.75;line-height:1.1}
+.btn span{line-height:1.2}
+/* legal pages */
+.doc{max-width:760px;margin:0 auto;padding:56px 24px 80px}
+.doc h1{font-size:34px;line-height:1.2;color:var(--ink);letter-spacing:-.02em;margin-bottom:8px}
+.doc .meta{color:var(--muted);font-size:14px;margin-bottom:32px}
+.doc h2{font-size:20px;color:var(--ink);margin:36px 0 10px}
+.doc p,.doc li{font-size:16px;color:var(--fg)}
+.doc p{margin-bottom:12px}
+.doc ul,.doc ol{padding-left:22px;margin-bottom:12px}
+.doc li{margin-bottom:6px}
+.footer{border-top:1px solid var(--border);padding:28px 0;font-size:14px;color:var(--muted)}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+.footer nav{display:flex;flex-wrap:wrap;gap:16px}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--ink)}
+@media (max-width:640px){.nav-links{display:none}.doc h1{font-size:28px}}
